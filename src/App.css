@@ -1,0 +1,344 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+/* all tags in whole website  */
+button {
+  cursor: pointer;
+}
+
+/* nav bar  */
+.navbar {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(152, 70, 56);
+  height: 75px;
+  width: 100vw;
+  position: fixed;
+  top: 0px;
+  z-index: 100;
+}
+
+.navright {
+  display: flex;
+}
+
+.navleft {
+  display: flex;
+}
+
+.navleft>img {
+  width: 200px;
+  height: 50px;
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin: 0.4vw 3vw;
+  font-size: 20px;
+}
+
+.middle {
+  display: flex;
+  justify-content: center;
+  margin: 20px 30px;
+}
+
+.middle>button {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(152, 70, 56);
+  text-align: center;
+  border: 2px solid rgb(152, 70, 56);
+  color: white;
+}
+
+.cartlogo {
+  width: 40px;
+  height: 50px;
+}
+#cartValue{
+  font-size: 20px;
+  position: relative;
+  left: 5px;
+  bottom: 3px;
+}
+
+/* sub Navbar  */
+.subnav {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(152, 70, 56);
+  height: 75px;
+  width: 100vw;
+  position: fixed;
+  top: 75px;
+  z-index: 100;
+}
+
+.subitem {
+  display: flex;
+}
+
+/* side bar  */
+.sidebar {
+  width: 23vw;
+  background-color: aqua;
+  height: 90vh;
+  position: fixed;
+  top: 150px;
+  left: 0px;
+  text-align: center;
+}
+
+.sortby {
+  width: 10vw;
+  height: 24px;
+  border-radius: 10px;
+  font-size: 20x;
+  margin: 5px;
+  text-align: center;
+}
+
+.pricerange {
+  display: flex;
+  justify-content: center;
+}
+
+.sortprice>input {
+  width: 8vw;
+  height: 24px;
+  border-radius: 10px;
+  font-size: 20x;
+  margin: 5px;
+  text-align: center;
+}
+
+/* main bar  */
+.mainbar {
+  width: 77vw;
+  height: 80vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  position: absolute;
+  right: 0px;
+  top: 150px;
+}
+
+.all {
+  display: flex;
+}
+
+/* card  */
+.card {
+  width: 220px;
+  height: 350px;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 5px 5px 5px rgb(135, 123, 108);
+  margin: 10px;
+}
+
+.card:hover {
+  box-shadow: 10px 10px 10px rgb(135, 123, 108);
+}
+
+.card>img {
+  width: 200px;
+  height: 150px;
+  border-radius: 20px;
+}
+
+.price {
+  display: flex;
+}
+
+.p {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.btn1 {
+  box-sizing: content-box;
+  width: 100px;
+  display: flex;
+  height: 30px;
+  font-size: 30px;
+  justify-content: space-evenly;
+  margin: 15px 10px;
+}
+
+/* .btn1>button{
+} */
+.card button {
+  border: 2px solid black;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.btn2 {
+  margin: 10px;
+}
+
+.discount {
+  color: green;
+}
+
+/* login signup  */
+.ls-btn {
+  background-color: tomato;
+  font-size: 20px;
+  width: 40%;
+  height: 40px;
+  margin-top: 20px;
+  padding: 0px 10px;
+}
+
+.l-btn {
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-left: 2vw;
+}
+
+.s-btn {
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.loginsignup {
+  width: 32vw;
+  padding: 2vw;
+  border: 10px solid tomato;
+  border-radius: 50px;
+  margin-top: 40px;
+}
+
+.login {
+  margin-top: 20px;
+}
+
+.signup {
+  margin-top: 20px;
+}
+
+.loginsignup {
+  position: relative;
+  top: 200px;
+}
+
+/* cart  */
+.cart{
+  position: relative;
+  top: 150px;
+  display: grid;
+  grid-template-columns: 59.5vw 29.5vw;
+  column-gap: 1vw;
+  margin: 20px 5vw;
+}
+.cartcard{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+}
+.cartcardleft>img{
+  width: 80px;
+  height: 80px;
+  margin: 0px 20px;
+}
+.cartcardleft{
+  display: flex;
+  align-items: center;
+}
+.title{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.samecart{
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 10px;
+  font-weight: 600;
+}
+.cartright{
+  border: 2px solid black;
+  height: 300px;
+}
+.placeorder{
+  width: 59.5vw;
+  background-color: azure;
+  height: 100px;
+  position: fixed;
+  bottom: 0px;
+  text-align: right;
+}
+.placeorder>button{
+  width: 150px;
+  height: 50px;
+  background-color: rgb(89, 220, 176);
+  margin:20px;
+  font-weight: 700;
+  color: white;
+  border: 2px solid white;
+}
+
+/* place address  */
+.address{
+  position: relative;
+  top: 150px;
+  display: grid;
+  grid-template-columns: 58.5vw 28.5vw;
+  column-gap: 1vw;
+  margin: 20px 5vw;
+  background-color: rgb(246, 246, 246);
+}
+.address>form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.same1{
+  width: 45%;
+  height: 50px;
+  background-color: white;
+  margin: 20px;
+} 
+.add{
+  width: 95%;
+  height: 100px;
+  background-color: white;
+  margin: 20px;
+}
+.conformorder{
+  width: 150px;
+  height: 50px;
+  background-color: rgb(89, 220, 176);
+  margin:20px;
+  font-weight: 700;
+  color: white;
+  border: 2px solid white;
+}
