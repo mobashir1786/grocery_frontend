@@ -6,15 +6,15 @@ const Sidebar = (props) => {
         const sortvalue = document.getElementById("sortBy").value;
         console.log(sortvalue);
         console.log(props.page);
-        let page = props.page;
+        // let page = props.page;
         const products = props.products;
         console.log(products);
         let filteredData = [];
-        if(sortvalue == "min"){
+        if(sortvalue === "min"){
             filteredData = await products.sort((a,b) => (a.price > b.price ? 1 : -1));
             console.log(filteredData);
             props.setProduct(filteredData)
-        }else if(sortvalue == "max"){
+        }else if(sortvalue === "max"){
             filteredData = await products.sort((a,b) => (a.price < b.price ? 1 : -1));
             console.log(filteredData);
             props.setProduct(filteredData)
