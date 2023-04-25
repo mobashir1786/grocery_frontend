@@ -17,7 +17,7 @@ export default function Login() {
                 console.log(res)
                 if (res.data.key === 1) {
                     document.cookie = "token=" + res.data.token + "; expires=" + Date.now() + 1 * 24 * 60 * 60 * 1000;
-                    window.location.href = 'http://localhost:3000'
+                    window.location.href = 'https://grocery-shop-mobashir.netlify.app/'
                 } else {
                     alert(res.data.message);
                 }
