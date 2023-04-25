@@ -19,7 +19,7 @@ export default function Signup() {
                 console.log(res)
                 document.cookie = "token="+res.data.token+"; expires="+Date.now() + 1 * 24 * 60 * 60 * 1000;
                 alert(res.data.message);
-                window.location.href = 'http://localhost:3000'
+                window.location.href = 'https://grocery-shop-mobashir.netlify.app/'
             }).catch(e => {
                 console.log(e);
             })
